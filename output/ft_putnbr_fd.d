@@ -1,0 +1,14 @@
+output/ft_putnbr_fd.o: output/ft_putnbr_fd.c libft.h includes/ft_char.h \
+ includes/ft_strings.h includes/ft_conversion.h includes/ft_memory.h \
+ includes/ft_list.h includes/ft_gnl.h includes/ft_output.h \
+ includes/ft_gc.h includes/ft_list.h
+libft.h:
+includes/ft_char.h:
+includes/ft_strings.h:
+includes/ft_conversion.h:
+includes/ft_memory.h:
+includes/ft_list.h:
+includes/ft_gnl.h:
+includes/ft_output.h:
+includes/ft_gc.h:
+includes/ft_list.h:
