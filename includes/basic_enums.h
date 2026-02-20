@@ -6,12 +6,12 @@
 /*   By: tibras <tibras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 03:38:37 by fardeau           #+#    #+#             */
-/*   Updated: 2026/02/20 10:02:07 by tibras           ###   ########.fr       */
+/*   Updated: 2026/02/20 10:39:24 by tibras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENUMS_H
-# define ENUMS_H
+#ifndef BASIC_ENUMS_H
+# define BASIC_ENUMS_H
 
 typedef enum e_select {
 	NONE = 0,

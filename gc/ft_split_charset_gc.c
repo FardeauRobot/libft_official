@@ -52,24 +52,26 @@ static char	*ft_cust_strdup_gc(const char *s, size_t start, size_t end, \
 	return (tmp);
 }
 
-static char	**ft_exec_gc(char **arr, const char *s, char *charset, \
+static char	**ft_exec_gc(const char *s, char *charset, \
 	size_t w_count, t_list **gc_head)
 {
+	char	**arr;
 	size_t	index;
-	size_t	start;
-	size_t	i;
+	size_t	i[2];
 
-	start = 0;
-	i = 0;
+	arr = ft_calloc_gc(w_count + 1, sizeof(char *), gc_head);
+	if (!arr)
+		return (NULL);
+	i[0] = 0;
 	index = 0;
 	while (index < w_count)
 	{
-		while (s[i] && ft_ischarset(s[i], charset))
-			i++;
-		start = i;
-		while (s[i] && !ft_ischarset(s[i], charset))
-			i++;
-		arr[index] = ft_cust_strdup_gc(s, start, i, gc_head);
+		while (s[i[0]] && ft_ischarset(s[i[0]], charset))
+			i[0]++;
+		i[1] = i[0];
+		while (s[i[0]] && !ft_ischarset(s[i[0]], charset))
+			i[0]++;
+		arr[index] = ft_cust_strdup_gc(s, i[1], i[0], gc_head);
 		if (!arr[index])
 			return (NULL);
 		index++;
@@ -80,16 +82,10 @@ static char	**ft_exec_gc(char **arr, const char *s, char *charset, \
 
 char	**ft_split_charset_gc(char const *s, char *charset, t_list **gc_head)
 {
-	char	**tab_arr;
 	size_t	word_count;
 
 	if (!s)
 		return (NULL);
 	word_count = ft_count_word(s, charset);
-	tab_arr = ft_calloc_gc(word_count + 1, sizeof(char *), gc_head);
-	if (!tab_arr)
-		return (NULL);
-	if (!ft_exec_gc(tab_arr, s, charset, word_count, gc_head))
-		return (NULL);
-	return (tab_arr);
+	return (ft_exec_gc(s, charset, word_count, gc_head));
 }
