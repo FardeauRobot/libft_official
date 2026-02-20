@@ -142,7 +142,7 @@ $(NAME) : $(OBJS)
 	curr=$$((curr + 1)); \
 	echo $$curr > $(COUNT_FILE); \
 	percent=$$((curr * 100 / $(TOTAL_FILES))); \
-	printf "$(GREEN)[%-50s] %d%% %s$(RESET)\r" "$$(awk -v p=$$percent 'BEGIN {len=int(p*50/100); for(i=0;i<len;i++) printf "="}')" "$$percent" "$<"
+	printf "\r$(GREEN)[%-50s] %d%% %s$(RESET)\033[K" "$$(awk -v p=$$percent 'BEGIN {len=int(p*50/100); for(i=0;i<len;i++) printf "="}')" "$$percent" "$<"
 
 bannerbuild:
 	@printf "\n$(CYAN)=====================================\n$(RESET)"
