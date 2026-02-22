@@ -16,6 +16,7 @@ char	*ft_strndup(const char *s, size_t n)
 {
 	char	*dup;
 	size_t	len;
+	size_t	i;
 
 	len = ft_strlen(s);
 	if (n < len)
@@ -24,7 +25,11 @@ char	*ft_strndup(const char *s, size_t n)
 	if (!dup)
 		return (NULL);
 	dup[len] = '\0';
-	while (len--)
-		dup[len] = s[len];
+	i = 0;
+	while (i < len)
+	{
+		dup[i] = s[i];
+		i++;
+	}
 	return (dup);
 }

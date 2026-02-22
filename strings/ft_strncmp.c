@@ -29,14 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main ()
-// {
-// 	const char *s1 = "abc";
-// 	const char *s2 = "abc";
-// 	size_t size =3;
-
-// 	int res1 = ft_strncmp(s1, s2, size);
-// 	int res2 = strncmp(s1, s2, size);
-// 	printf("DIY = %d || B-IN = %d\n", res1, res2);
-// }

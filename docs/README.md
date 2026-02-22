@@ -14,7 +14,6 @@ The source files are organized into the following subdirectories:
 - **list/**: Linked list manipulation (`ft_lstnew`, `ft_lstadd_back`, etc.)
 - **memory/**: Memory manipulation (`ft_memset`, `ft_calloc`, etc.)
 - **output/**: Printing and file descriptor output (`ft_putstr_fd`, `ft_printf`, etc.)
-- **sorting/**: Sorting algorithms.
 - **strings/**: String manipulation (`ft_strlen`, `ft_split`, etc.)
 
 Each code block below uses a fixed-width layout so every line has the same number of characters, making the reference easy to scan in raw form.

@@ -36,15 +36,3 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	str[i + j] = '\0';
 	return (str);
 }
-
-// #include <stdio.h>
-// int main ()
-// {
-// 	char *s1 = "CATIN";
-// 	char *s2 = " ";
-// 	char *res;
-
-// 	res = ft_strjoin(s1, s2);
-// 	printf("RES = %s\n", res);
-// 	free(res);
-// }

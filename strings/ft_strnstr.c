@@ -33,22 +33,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <bsd/string.h>
-
-// int main ()
-// {
-// 	const char *hay = "aaabcabcd";
-// 	const char *needle = "cd";
-// 	size_t len = 8;
-
-// 	char *res1 = ft_strnstr(hay, needle, len);
-// 	char *res2 = strnstr(hay, needle, len);
-// 	printf("%s\n", res1);
-// 	printf("%s\n", res2);
-// 	if (res1 != res2)
-// 		printf("Error\n");
-// 	else
-// 		printf("Oeeeee\n");
-// }

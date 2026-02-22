@@ -38,14 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(tmp, s + start, t_len + 1);
 	return (tmp);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char *res;
-// 	char *test1 = "tripouille";
-// 	int start = 100;
-// 	size_t len = 1;
-// 	res = ft_substr(test1, start, len);
-// 	printf("%s\n", res);
-// }

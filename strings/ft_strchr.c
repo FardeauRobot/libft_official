@@ -29,16 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (NULL);
 }
-
-// #include <bsd/string.h>
-// #include <stdio.h>
-
-// int main ()
-// {
-// 	char *test = "teste";
-// 	int c = 1024;
-// 	char *res = strchr(test, c);
-// 	char *res2 = ft_strchr(test, c);
-// 	printf("%s\n", res);
-// 	printf("%s\n", res2);
-// }

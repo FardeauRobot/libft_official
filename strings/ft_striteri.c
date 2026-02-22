@@ -23,18 +23,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// void	ft_print(unsigned int index, char *str)
-// {
-// 	if (str[index] >= 'a' && str[index] <= 'z')
-// 	{
-// 		str[index] += 1;
-// 		// str[index] = 'a';
-// 	}
-// }
-// int main ()
-// {
-// 	char test[250] = "Coucou leeeeeeees salopes";
-// 	ft_striteri(test, ft_print);
-// 	printf("%s\n", test);
-// }

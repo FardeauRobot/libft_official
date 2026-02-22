@@ -26,11 +26,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(nb / 10, fd);
 	ft_putchar_fd(nb % 10 + '0', fd);
 }
-
-// #include <limits.h>
-// int main ()
-// {
-// 	int nb = INT_MIN;
-
-// 	ft_putnbr_fd(nb, 1);
-// }

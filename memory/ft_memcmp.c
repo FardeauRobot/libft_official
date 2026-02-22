@@ -31,15 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main ()
-// {
-// 	char s[] = {-128, 0, 127, 0};
-// 	char s2[] = {0,0,127,0};
-
-// 	printf("%d\n",ft_memcmp(s, s2, 1));
-// 	printf("%d\n",memcmp(s, s2, 1));
-// }

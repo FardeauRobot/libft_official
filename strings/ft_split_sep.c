@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-
 static	void	free_tab(char **arr, size_t index)
 {
 	size_t	i;
@@ -110,21 +108,3 @@ char	**ft_split_sep(char const *s, char sep)
 		return (NULL);
 	return (tab_arr);
 }
-
-// int main ()
-// {
-// 	char const *test = "--1-2--3---4----5-----42";
-// 	char sep = '-';
-// 	char **test_arr;
-// 	int i = 0;
-
-// 	test_arr = ft_split(test, sep);
-// 	while (i < 7)
-// 	{
-// 		printf("ARR[%d] = %s\n", i, test_arr[i]);
-// 		free(test_arr[i]);
-// 		i++;
-// 	}
-// 	free(test_arr);
-// 	ft_split(test, sep);
-// }

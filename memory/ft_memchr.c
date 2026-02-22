@@ -29,19 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-
-// int main ()
-// {
-// 	const char s[] = {0, 1, 2, 3, 4, 5};
-// 	// int c = 'o';
-// 	// size_t n = 4;
-// 	char *s1;
-// 	char *s2;
-
-// 	s1 = memchr(s, 2 + 256, 3);
-// 	s2 = ft_memchr(s, 2 + 256, 3);
-// 	printf("DIY = %s || B-IN = %s\n", s2, s1);
-// }

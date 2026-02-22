@@ -31,12 +31,3 @@ char	*ft_strdup(const char *s1)
 	str[i] = '\0';
 	return (str);
 }
-
-// int main ()
-// {
-// 	char *test= "Coucou";
-// 	char *tmp;
-
-// 	tmp = ft_strdup(test);
-// 	printf("%s\n", tmp);
-// }

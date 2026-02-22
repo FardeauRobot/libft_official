@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>	
 
 static int	ft_is_set(char c, char const *set)
 {
@@ -53,14 +52,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[j] = '\0';
 	return (str);
 }
-
-// int main ()
-// {
-// 	const char *s1 = "    Cec|&|i es|$| t un test    ";
-// 	// const char *s1 = "";
-// 	const char *sep = "| ";
-// 	char *res;
-
-// 	res = ft_strtrim(s1, sep);
-// 	printf("%s\n", res);
-// }
