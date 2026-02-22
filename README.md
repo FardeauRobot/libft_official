@@ -139,7 +139,7 @@ build:
 
 ```sh
 git submodule add https://github.com/FardeauRobot/libft_official.git libft
-cd libft && git checkout copilot/update-files-to-meet-42-norm
+cd libft && git checkout main
 ```
 
 Then include `libft.h` and link `libft.a` from the submodule path. Future
