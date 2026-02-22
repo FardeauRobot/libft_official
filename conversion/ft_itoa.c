@@ -54,23 +54,11 @@ char	*ft_itoa(int n)
 		limit++;
 	}
 	res[size] = '\0';
-	while (size-- > limit)
+	while (size > limit)
 	{
+		size--;
 		res[size] = tmp % 10 + '0';
 		tmp /= 10;
 	}
 	return (res);
 }
-
-// #include <limits.h>
-// #include <stdio.h>
-
-// int main ()
-// {
-// 	char *str;
-// 	int nb = INT_MIN;
-
-// 	str = ft_itoa(nb);
-// 	printf("STR = %s\n", str);
-// 	free(str);
-// }

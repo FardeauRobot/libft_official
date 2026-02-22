@@ -31,24 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main ()
-// {
-// 	const char s[] = "abbbbbbbb";
-// 	// char *empty = malloc(1);
-// 	// if (!empty)
-// 	// 	return (1);
-// 	// const char s2[] = "ltripouiel";
-// 	// const char s3[] = "";
-// 	int c = 'a';
-// 	char *res1;
-// 	char *res2;
-
-// 	res1 = ft_strrchr(s, c);
-// 	res2 = strrchr(s, c);
-// 	printf("DIY = %s\n", res1);
-// 	printf("BIN = %s\n", res2);
-// 	// free(empty);
-// }

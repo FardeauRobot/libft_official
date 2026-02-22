@@ -34,22 +34,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 	else
 		return (siz + s_len);
 }
-
-// #include <stdio.h>
-// #include <bsd/string.h>
-// int main ()
-// {
-// 	char dest1[20] = "Coucou les";
-// 	char dest2[20] = "Coucou les";
-// 	char const src1[5] = "ABCDE";
-// 	char const src2[5] = "ABCDE";
-
-// 	size_t res1;	
-// 	size_t res2;	
-// 	size_t	size = 20;
-
-// 	res1 = ft_strlcat(dest1, src1, size);
-// 	res2 = strlcat(dest2, src2, size);
-// 	printf("DIY = %s || Taille = %zu\n", dest1, res1);
-// 	printf("BIN = %s || Taille = %zu\n", dest2, res2);
-// }

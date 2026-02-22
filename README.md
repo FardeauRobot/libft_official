@@ -130,3 +130,18 @@ make re     # fclean + make
 ```sh
 cc main.c libft.a -I. -o my_program
 ```
+
+## Using this library as a Git submodule
+
+You can track this library from another repository while keeping updates in
+sync. Add it as a submodule, pull the desired branch, and include it in your
+build:
+
+```sh
+git submodule add https://github.com/FardeauRobot/libft_official.git libft
+cd libft && git checkout main
+```
+
+Then include `libft.h` and link `libft.a` from the submodule path. Future
+updates to this repository can be pulled from within the submodule to keep your
+dependent projects aligned with the latest changes.

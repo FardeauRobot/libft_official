@@ -108,21 +108,3 @@ char	**ft_split_charset(char const *s, char *charset)
 		return (NULL);
 	return (tab_arr);
 }
-
-// int main ()
-// {
-// 	char const *test = "-++-1----2--3-++++ sadasd+++ --4----5-----42";
-// 	// char sep = '-';
-// 	char *charset = "+-";
-// 	char **test_arr;
-// 	int i = 0;
-
-// 	test_arr = ft_split_charset(test, charset);
-// 	while (i < 7)
-// 	{
-// 		printf("ARR[%d] = %s\n", i, test_arr[i]);
-// 		free(test_arr[i]);
-// 		i++;
-// 	}
-// 	free(test_arr);
-// }
