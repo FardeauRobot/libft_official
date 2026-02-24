@@ -6,7 +6,7 @@
 /*   By: tibras <tibras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 14:01:17 by tibras            #+#    #+#             */
-/*   Updated: 2025/11/29 18:28:46 by tibras           ###   ########.fr       */
+/*   Updated: 2026/02/24 10:38:19 by tibras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,4 +83,20 @@ char	*ft_gnl_substr(const char *s, int max)
 	}
 	tmp[i] = '\0';
 	return (tmp);
+}
+
+void	ft_gnl_free_all(char **arr)
+{
+	int	i;
+
+	i = 0;
+	while (i < 1024)
+	{
+		if (arr[i])
+		{
+			free(arr[i]);
+			arr[i] = NULL;
+		}
+		i++;
+	}
 }

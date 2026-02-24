@@ -83,17 +83,17 @@ char	*get_next_line(int fd)
 	static char		*arr_s[1024];
 	char			buf[1];
 	char			*tmp;
-
-	if (fd < 0 || BUFFER_SIZE_GNL <= 0 || read(fd, buf, 0) < 0)
+	if (BUFFER_SIZE_GNL <= 0 || fd >= 1024)
+		return (NULL);
+	if (fd < 0)
 	{
-		if (arr_s[fd])
-			ft_arr_clean(&arr_s[fd], NULL, 0);
+		ft_gnl_free_all(arr_s);
 		return (NULL);
 	}
+	if (read(fd, buf, 0) < 0)
+		return (ft_arr_clean(&arr_s[fd], NULL, 0));
 	arr_s[fd] = ft_theline(arr_s[fd], fd);
-	if (!arr_s[fd])
-		return (NULL);
-	if (!arr_s[fd][0])
+	if (!arr_s[fd] || !arr_s[fd][0])
 		return (ft_arr_clean(&arr_s[fd], NULL, 0));
 	if (ft_gnl_strchr(arr_s[fd], '\n') >= 0)
 		tmp = ft_found_newline(&arr_s[fd]);

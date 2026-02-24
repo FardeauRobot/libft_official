@@ -28,5 +28,6 @@ size_t	ft_gnl_strlen(const char *str);
 char	*ft_gnl_strjoin(const char *s1, const char *s2);
 int		ft_gnl_strchr(const char *s, int c);
 char	*ft_gnl_substr(const char *s, int max);
+void	ft_gnl_free_all(char **arr);
 
 #endif
