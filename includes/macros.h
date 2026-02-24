@@ -6,7 +6,7 @@
 /*   By: tibras <tibras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 13:37:42 by tibras            #+#    #+#             */
-/*   Updated: 2026/02/20 10:39:26 by tibras           ###   ########.fr       */
+/*   Updated: 2026/02/23 10:15:40 by tibras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,5 @@
 # define MACROS_H
 
 # define SPACES " \a\b\t\n\v\f\r\0"
-
-typedef enum e_select {
-	FIRST = 1,
-	SECOND = 2,
-	BOTH = 3,
-}	t_select;
 
 #endif

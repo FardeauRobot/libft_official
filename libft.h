@@ -20,6 +20,7 @@
 # include <stdarg.h>
 
 // Include all subdirectory headers
+# include "macros.h"
 # include "ft_char.h"
 # include "ft_strings.h"
 # include "ft_conversion.h"
